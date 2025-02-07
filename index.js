@@ -1,7 +1,7 @@
 const CryptoJS = require("crypto-js");
 
 // Encrypt and store data
-const setSecureItem = (key, value, secretKey = "default-secret-key") => {
+const setSecureItem = (key, value, secretKey) => {
   try {
     if (!secretKey) throw new Error("Encryption key is required!");
     const encryptedData = CryptoJS.AES.encrypt(
@@ -15,7 +15,7 @@ const setSecureItem = (key, value, secretKey = "default-secret-key") => {
 };
 
 // Retrieve and decrypt data
-const getSecureItem = (key, secretKey = "default-secret-key") => {
+const getSecureItem = (key, secretKey) => {
   try {
     if (!secretKey) throw new Error("Decryption key is required!");
     const encryptedData = localStorage.getItem(key);
