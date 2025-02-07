@@ -1,9 +1,14 @@
 {
   "name": "lock-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A secure wrapper for localStorage using AES encryption.",
   "main": "index.js",
-  "keywords": ["localStorage", "secure", "encryption", "crypto-js"],
+  "keywords": [
+    "localStorage",
+    "secure",
+    "encryption",
+    "crypto-js"
+  ],
   "author": "Deep Maurya",
   "license": "MIT",
   "repository": {
@@ -13,5 +18,7 @@
   "dependencies": {
     "crypto-js": "^4.1.1"
   },
-  "files": ["index.js"]
+  "files": [
+    "index.js"
+  ]
 }
